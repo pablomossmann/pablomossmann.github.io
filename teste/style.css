@@ -1,0 +1,9 @@
+body{
+    background-color: brown;
+    color: gold;
+}
+
+img{
+    height: 100px;
+    border: 10px solid rgb(43, 168, 185);
+}
