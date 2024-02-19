@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <title>Cardgame</title>
+    <title>Povits</title>
 </head>
 <body>
 
-    <!--div>
-        <input id="qtd-cartas" type="number" placeholder="Quantidade" value="1">
-        <button onclick="gerarCartas(document.getElementById('qtd-cartas').value)">Gerar</button>
-    </div-->
-
-    <header id="navbar">Monte seu deck! Cartas selecionadas: <label id="contCartas">0</label>/12</header>
+    <div id="navbar">
+        <label><label>Monte seu deck</label><label>de <b>Povits</b> !</label></label>
+        <label><label><b id="contCartas">0</b> / 12</label></label>
+        <div id="botao"><button onclick="montarDeck()">Baixar</button></div>
+    </div>
 
     <div id="cards"></div>
 
     <div id="meudeck"></div>
 
-    <div id="botao"><button onclick="montarDeck()">Montar Deck</button></div><div> </div>
+    <div> </div>
 
-        
 </body>
 </html>

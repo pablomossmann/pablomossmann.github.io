@@ -3,7 +3,7 @@ const _meudeck = document.getElementById('meudeck')
 cartas = 0
 codigos = []
 
-gerarCartas(60)
+gerarCartas(100)
 
 function dado(lados){
     v = Math.floor(Math.random() * lados + 1)
@@ -63,7 +63,7 @@ function gerarCartas(qtd){
                 cores = ['dodgerblue', '#c8524c', '#548235']
             }else{
                 elementos = ['Black','White']
-                cores = ['#333', '#999']
+                cores = ['#444', '#999']
             }
             cor = cores[Math.floor(Math.random() * cores.length)]
             elm = elementos[cores.indexOf(cor)]
@@ -181,10 +181,10 @@ function gerarCartas(qtd){
 
 contCartas = 0
 function selecionar(i){
-    if(document.getElementById('carta'+i).style.border != '8px solid rgb(203, 148, 38)'){
+    if(document.getElementById('carta'+i).style.border != '8px solid deeppink'){
         if(contCartas < 12){
             contCartas++
-            document.getElementById('carta'+i).style.border = '8px solid rgb(203, 148, 38)'
+            document.getElementById('carta'+i).style.border = '8px solid deeppink'
         }else{
             alert('Deck cheio. Você pode desmarcar cartas.')
         }
@@ -200,7 +200,7 @@ function montarDeck(){
     if(contCartas == 12){
         html = ''
         for(i=0; i<cartas; i++){
-            if(!(document.getElementById('carta'+i).style.border != '8px solid rgb(203, 148, 38)')){
+            if(!(document.getElementById('carta'+i).style.border != '8px solid deeppink')){
 
                 codigo = codigos[i].split('/')
                 vida = codigo[0]
@@ -248,28 +248,27 @@ function montarDeck(){
 
             }
         }
-        _cards.innerHTML = ''
-        document.getElementById('navbar').innerHTML = 'Deck pronto! Baixe a imagem para importa-lo no TableTop Simulator.'
-        document.getElementById('meudeck').innerHTML = html
-        document.getElementById('botao').innerHTML = `<button onclick="converterParaImagem()">Baixar Deck</button>`
+        _meudeck.innerHTML = html
+        converterParaImagem()
+        _meudeck.innerHTML = ''
     }else{
         alert('Deck incompleto. '+contCartas+'/12')
     }
 }
 
 function converterParaImagem() {
-    var divParaConverter = document.getElementById('meudeck');
+    var divParaConverter = _meudeck
 
     html2canvas(divParaConverter).then(function(canvas) {
-        var imagemConvertida = new Image();
-        imagemConvertida.src = canvas.toDataURL("image/png");
+        var imagemConvertida = new Image()
+        imagemConvertida.src = canvas.toDataURL("image/png")
 
-        var linkDownload = document.createElement('a');
-        linkDownload.href = imagemConvertida.src;
-        linkDownload.download = 'meu_deck.png';
+        var linkDownload = document.createElement('a')
+        linkDownload.href = imagemConvertida.src
+        linkDownload.download = 'meu_deck.png'
 
-        document.body.appendChild(linkDownload);
-        linkDownload.click();
-        document.body.removeChild(linkDownload);
+        document.body.appendChild(linkDownload)
+        linkDownload.click()
+        document.body.removeChild(linkDownload)
     })
 }
