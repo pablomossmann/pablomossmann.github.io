@@ -1,0 +1,21 @@
+body{
+    background-color: darkslategray;
+}
+
+h1{
+    color:cadetblue;
+}
+
+p{
+    color:bisque;
+}
+
+img{
+    width: 300px;
+    border: 4px solid bisque;
+    border-radius: 10px;
+}
+
+img:hover{
+    border: 4px solid brown;
+}
