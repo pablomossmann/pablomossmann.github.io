@@ -4,8 +4,8 @@
 
 body{
     margin: 0;
-    background-color: rgb(35, 36, 56);
-    color: rgb(66, 66, 105);
+    background-color: rgb(50, 35, 56);
+    color: rgb(117, 63, 140);
 }
 
 nav{
@@ -28,10 +28,11 @@ nav{
         padding: 8px;
         border: none;
         outline: none;
+        width: 100px;
     }
     button{
         border: none;
-        background-color: rgb(66, 66, 105);
+        background-color: rgb(117, 63, 140);
         color: white;
         padding: 0 10px;
         cursor: pointer;
@@ -60,7 +61,7 @@ p{
 }
 
 .cards > a{
-    background-color: rgb(66, 66, 105);
+    background-color: rgb(117, 63, 140);
     height: 140px;
     width: 140px;
     border-radius: 15px;
@@ -73,6 +74,7 @@ p{
     color: white;
     text-decoration: none;
     transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     img{
         height: 70px;
         width: 70px;
@@ -90,9 +92,10 @@ p{
 
 .container{
     display: flex;
-    background-color: rgb(66, 66, 105);
+    background-color: rgb(117, 63, 140);
     border-radius: 15px;
     width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .foto{
