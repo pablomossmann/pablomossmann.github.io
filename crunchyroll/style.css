@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #23252b;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav div{
+    display: flex;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    color: rgb(227, 227, 227);
+    font-size: 17px;
+    font-family: 'Arial';
+    text-decoration: none;
+    gap: 10px;
+}
+
+nav a:hover{
+    background-color: #191a1e;
+}
+
+nav div a img{
+    height: 22px;
+}
+
+.premium{
+    display: flex;
+}
+
+.premium i{
+    color: yellow;
+    font-size: 25px;
+}
+
+.premium div{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.p1{
+    color: orange;
+}
