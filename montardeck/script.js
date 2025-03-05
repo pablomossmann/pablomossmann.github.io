@@ -3,7 +3,7 @@ const _meudeck = document.getElementById('meudeck')
 cartas = 0
 codigos = []
 
-gerarCartas(1000)
+gerarCartas(60)
 
 function dado(lados){
     v = Math.floor(Math.random() * lados + 1)
