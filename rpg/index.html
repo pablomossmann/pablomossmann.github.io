@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="ficha">
+
+        <h3 class="titulo">Monte a sua ficha RPG</h3>
+
+        <div>Nome: <input id="nome" type="text" placeholder="Nome do personagem"></div>
+        <div>Foto: <input id="foto" type="text" placeholder="Cole o endereço de uma imagem"></div>
+        <div>
+            Arma:
+            <select name="" id="arma">
+                <option value="Desarmado">Desarmado 🖐️</option>
+                <option value="Espada">Espada ⚔️</option>
+                <option value="Arco">Arco 🏹</option>
+                <option value="Bastão">Bastão 🏏</option>
+            </select>
+        </div>
+        <hr>
+
+        <b class="atributos">Distribua seus 8 atributos</b>
+        <div>Força: <input id="for" type="number" min="0" max="20" value="0"></div>
+        <div>Destreza: <input id="des" id="des" type="number" min="0" max="20" value="0"></div>
+        <div>Constituição: <input id="con" type="number" min="0" max="20" value="0"></div>
+        <div>Inteligência: <input id="int" type="number" min="0" max="20" value="0"></div>
+        <div>Carisma: <input id="car" type="number" min="0" max="20" value="0"></div>
+
+        <br><button onclick="enviarFicha()">CONFIRMAR 🔥🎲</button>
+    </div>
+
+    <div id="fichapronta">
+
+        <div class="perfil">
+            <img id="fotoficha" src="https://i0.wp.com/jogaod20.com/wp-content/uploads/2020/08/entendendo-as-mecanicas-de-barbaro.jpeg" alt="Foto de perfil">
+            <div>
+                <h2 id="nomeficha">Nome do personagem</h2>
+                <p id="infoficha">
+                    Arma: Espada <br>
+                    Vida: 10 <br>
+                    Armadura: 10
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="atributosficha" class="atributos">
+            Força: 0 |
+            Destreza: 0 |
+            Constituição: 0 |
+            Inteligência: 0 |
+            Carisma: 0
+        </div>
+        
+        <div class="aviso">AVISO: A minha estilização do perfil "pronto" está inacabado.</div>
+
+    </div>
+
+</body>
+</html>
