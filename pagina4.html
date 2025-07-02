@@ -3,50 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Tabelas</h1>
+    
+    <h1>Formulários</h1>
     <hr>
 
-    <table border>
-        <tr>
-            <th colspan="4">CHAPÉUS DE PALHA</th>
-        </tr>
-        <tr>
-            <td></td>
-            <th>Nome</th>
-            <th>Cargo</th>
-            <th>Recompensa</th>
-        </tr>
-        <tr>
-            <th rowspan="5">Piratas</th>
-            <td>Monkey D Luffy</td>
-            <td>Capitão</td>
-            <td>3.000.000.000b</td>
-        </tr>
-        <tr>
-            <td>Roronoa Zoro</td>
-            <td>Imediato</td>
-            <td>1.111.000.000b</td>
-        </tr>
-        <tr>
-            <td>Nami</td>
-            <td>Navegadora</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Usopp</td>
-            <td>Atirador</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Vinsmoke Sanji</td>
-            <td>Cozinheiro</td>
-            <td></td>
-        </tr>
-    </table>
-    
+    <form action="">
+
+        <input type="text" minlength="3" maxlength="10" placeholder="Insira o seu nome"> <br>
+        <input type="number" value="0" min="0" max="20"> <br>
+        <input type="email"> <br>
+        <input type="password" required> <br>
+        <input type="range"> <br>
+        <input type="color"> <br>
+        <input type="date" disabled> <br>
+        <input type="datetime-local"> <br>
+        <input type="file"> <br>
+        <input type="checkbox" checked> Português
+        <input type="checkbox"> Inglês
+        <input type="checkbox"> Espanhol <br>
+        <input type="radio" name="genero"> Masculino
+        <input type="radio" name="genero"> Feminino
+        <input type="radio" name="genero"> Outro <br>
+        <input type="radio" name="time"> Grêmio
+        <input type="radio" name="time"> Inter
+        <input type="radio" name="time"> Nenhum <br>
+        <select name="" id="">
+            <option value="">Sem conrtura</option>
+            <option value="">Chocolate</option>
+            <option value="">Morango</option>
+            <option value="">Caramelo</option>
+        </select> <br><br>
+        <button>Enviar</button>
+    </form>
+
 </body>
 </html>
+
+<!--
+
+value           definir valor padrão de entrada
+minlength       definir o mínimo de caracteres
+maxlength       definir o máximo de caracteres
+min             definir o mínimo numérico
+max             definir o máximo númerico
+placeholder     definir instrução na entrada
+required        torna uma entrada obrigatória
+checked         deixa a caixa marcada
+disabled        torna uma entrada desabilitada
+
+-->
